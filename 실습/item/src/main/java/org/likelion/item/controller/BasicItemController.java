@@ -26,8 +26,8 @@ public class BasicItemController {
 
     @PostConstruct
     public void init(){
-        itemRepository.save(new Item("itemA", 10000, 10));
-        itemRepository.save(new Item("itemB", 20000, 20));
+        itemRepository.save(new Item("itemA", 10000, 10,"멋사"));
+        itemRepository.save(new Item("itemB", 20000, 20, "멋사"));
     }
 
     @GetMapping("/{itemId}")

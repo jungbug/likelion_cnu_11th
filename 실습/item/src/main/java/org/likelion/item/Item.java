@@ -9,13 +9,16 @@ public class Item {
     private Integer price;
     private Integer quantity;
 
+    private String manger;
+
     public Item(){
 
     }
 
-    public Item(String itemName, Integer price, Integer quantity){
+    public Item(String itemName, Integer price, Integer quantity, String manger){
         this.itemName = itemName;
         this.price = price;
         this.quantity = quantity;
+        this.manger = manger;
     }
 }

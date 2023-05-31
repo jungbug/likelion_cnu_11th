@@ -27,6 +27,7 @@
         <th>상품명</th>
         <th>가격</th>
         <th>수량</th>
+        <th>관리자</th>
       </tr>
       </thead>
       <tbody>
@@ -35,6 +36,7 @@
         <td><a href="item.html" th:href="@{|/basic/items/${item.id}|}" th:text="${item.itemName}">상품명</a></td>
         <td th:text="${item.price}">10000</td>
         <td th:text="${item.quantity}">10</td>
+        <td th:text="${item.manger}">멋사</td>
       </tr>
       </tbody>
     </table>
